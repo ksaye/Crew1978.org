@@ -1,0 +1,63 @@
+table.maintable {
+    width: 90%;
+    border: 0;
+}
+table {
+    border: 0;
+    width: 100%;
+    vertical-align: top;  
+    border-spacing: 0px;      
+}
+
+.contentTableTitle {
+    text-align: center;
+    background:  #2429A7;
+    color:  #8FD300;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #2429A7;
+    font-size: larger;
+    border: 3px;
+}
+
+table.contentTable {
+    width: 100%;
+    border: 1px;
+    border-width: 3px;
+    border-color: #2429A7;
+    Background: White;
+    border-style: solid
+    
+}
+
+td.calendarDay {
+    border-color: #8FD300;
+    border: 1px;
+    width: 14.28%;
+    border-style: ridge;
+    height: 100%;
+}
+a {
+    font-size: smaller;
+}
+
+.footer {
+    font-size: smaller;
+    text-align: center;
+}
+
+td {
+    vertical-align: top;
+    border: 0px;
+}
+
+body {
+    font-family: Verdana, Helvetica;
+    background-color: #8FD300;
+    
+}
+
+/* Green is 8FD300
+   Blue is 2429A7 
+*/
+
