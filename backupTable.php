@@ -5,7 +5,7 @@ use WindowsAzure\Common\ServiceException;
 use WindowsAzure\Table\Models\Entity;
 use WindowsAzure\Table\Models\EdmType;
 
-$backupStorageAcct  = "DefaultEndpointsProtocol=https;AccountName=crew1978backup;AccountKey=8gqQfXStgJxh8c3hGqSQO0wXeNt6jpKgmAkVZ2YvDFQYWi5nIKe154wG44C316hKBPHhX1twZ+lc2GpaslIgYA==";
+$backupStorageAcct  = ServicesBuilder::getInstance()->createTableService($_SERVER["CUSTOMCONNSTR_StorageAccount_backup"]);
 $tableRestProxy     = ServicesBuilder::getInstance()->createTableService($_SERVER["CUSTOMCONNSTR_StorageAccount"]);
 $tableRestProxyBack = ServicesBuilder::getInstance()->createTableService($backupStorageAcct);
 $tableName          = "crew1978";
