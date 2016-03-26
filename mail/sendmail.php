@@ -27,8 +27,8 @@ function sendmail($toAddress, $fromAddress, $subject, $body) {
 	$smtp->data_timeout=0;              /* Set to the number seconds wait for sending or retrieving data from the SMTP server.
 	                                       Set to 0 to use the same defined in the timeout variable */
 	
-	$smtp->user="azure_4e1178006c056afc5454bd5d5952c917@azure.com";                     /* Set to the user name if the server requires authetication */
-	$smtp->password="ng7o9PDTlRF3h2e";                 /* Set to the authetication password */
+	$smtp->user=$_SERVER["CUSTOMCONNSTR_sendgridID"]);                     /* Set to the user name if the server requires authetication */
+	$smtp->password=$_SERVER["CUSTOMCONNSTR_sendgridPass"]);                 /* Set to the authetication password */
 
 	/*
 	 * If you need to use the direct delivery mode and this is running under
